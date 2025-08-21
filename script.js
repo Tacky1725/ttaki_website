@@ -96,7 +96,7 @@ const i18n = {
     hero_sub: "XR, HCI, Robotics",
     cta_view_profile: "View Profile",
     about_title: "ABOUT ME",
-    about_intro: "I work at the intersection of Mixed Reality and autonomous mobile robots (AMRs), developing an interface that enables people to intuitively edit the environmental maps used by robots.",
+    about_intro: "Specializing in Mixed Reality and AMRs; building an interface for intuitive editing of robot navigation maps.",
     affiliation: "Affiliation: Graduate School of Information Science and Technology, The University of Osaka",
     profile_name: "Name",
     profile_focus: "Research Areas",
