@@ -211,7 +211,7 @@ a:hover {
   grid-template-columns: 1.1fr .9fr;
   gap: 2rem;
   align-items: center;
-  padding: 4.5rem 0 3rem;
+  padding: 2rem 0 2rem;
 }
 
 .hero-copy h1 {
@@ -245,31 +245,18 @@ a:hover {
   box-shadow: var(--ring)
 }
 
-.hero-visual {
-  min-height: 200px;
-  border-radius: var(--radius);
-  background:
-    radial-gradient(1200px 400px at 70% -20%, rgba(211, 84, 0, .25), transparent 60%),
-    conic-gradient(from 200deg at 30% 30%, #fff, #fff);
-  border: 1px solid #eee;
-}
-
 /* ===== Hero: モバイル最適化（縦並び・余白圧縮） ===== */
 @media (max-width: 880px) {
   .hero-inner {
     grid-template-columns: 1fr;
     gap: clamp(12px, 3vw, 20px);
-    padding: 2.8rem 0 2.2rem;
-  }
-
-  .hero-visual {
-    min-height: 160px;
+    padding: 1.5rem 0 1.5rem;
   }
 }
 
 /* Sections */
 .section {
-  padding: 3.5rem 0
+  padding: 3rem 0 0
 }
 
 .section.alt {
@@ -343,7 +330,7 @@ a:hover {
 /* モバイル時：セクションの上下余白を少し詰める */
 @media (max-width: 600px) {
   .section {
-    padding: 2.4rem 0
+    padding: 2rem 0
   }
 }
 
@@ -510,8 +497,10 @@ a:hover {
   margin: 1rem 0 0;
   padding: 0;
   display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .social-btn {
@@ -547,17 +536,16 @@ a:hover {
   box-shadow: var(--ring);
 }
 
-@media (max-width: 520px) {
-  .socials {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Footer */
 .site-footer {
   padding: 2rem 0;
   border-top: 1px solid #eee;
   color: #6b7280
+}
+
+.site-footer .container{
+  display: flex;
+  justify-content: center;
 }
 
 /* Focus visibility for a11y */
