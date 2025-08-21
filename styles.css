@@ -398,6 +398,7 @@ a:hover {
 
 .pub-title {
   display: block;
+  color: var(--text);
   font-weight: 700
 }
 
