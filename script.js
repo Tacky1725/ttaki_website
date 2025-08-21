@@ -43,7 +43,7 @@ const i18n = {
     skip_to_content: "コンテンツへスキップ",
     nav_about: "プロフィール",
     nav_publications: "研究業績",
-    nav_projects: "製作物",
+    nav_projects: "制作物",
     nav_contact: "お問合せ",
     hero_title: "Takumi TAKI | 多喜 匠",
     hero_sub: "XR, HCI, Robotics",
