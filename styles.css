@@ -220,6 +220,10 @@ a:hover {
   margin: 0 0 .5rem
 }
 
+.hero-copy .btn {
+  padding: .5rem 1rem;
+}
+
 .lead {
   font-size: 1.1rem;
   color: var(--muted);
