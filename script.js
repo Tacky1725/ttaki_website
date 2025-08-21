@@ -66,7 +66,7 @@ const i18n = {
     pub2_authors: "多喜 匠, 小林 聖人, Iglesius Eduardo, 千葉 直也, 白井 詩沙香, 浦西 友樹",
     pub_link_paper: "論文",
     pub_link_website: "WEBサイト",
-    proj_title: "製作物（ページ作成中）",
+    proj_title: "制作物（ページ作成中）",
     proj1_name: "Coming Soon",
     proj1_desc: "Coming Soon ...",
     proj2_name: "Coming Soon",
