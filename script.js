@@ -104,7 +104,7 @@ const i18n = {
     profile_focus_text: "Mixed Reality, Human–Computer Interaction (HCI), Autonomous Mobile Robots",
     profile_brief: "Brief Bio",
     profile_brief_item1: "Apr 2025 – Present: Uranishi Laboratory, Department of Information Systems Engineering, Graduate School of Information Science and Technology, The University of Osaka",
-    profile_brief_item2: "Apr 2021 – Mar 2025: Software Science Course, Department of Information and Computer sciences, School of Engineering Science, The University of Osaka",
+    profile_brief_item2: "Apr 2021 – Mar 2025: Software Science Course, Department of Information and Computer Sciences, School of Engineering Science, The University of Osaka",
     profile_lab: "Uranishi Lab Website",
     pub_title: "Publications",
     pub1_title: "MRHaD: Mixed Reality-based Hand-Drawn Map Editing Interface for Mobile Robot Navigation",
