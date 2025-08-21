@@ -330,7 +330,7 @@ a:hover {
 /* モバイル時：セクションの上下余白を少し詰める */
 @media (max-width: 600px) {
   .section {
-    padding: 2rem 0
+    padding: 2rem 0 0
   }
 }
 
