@@ -1105,17 +1105,20 @@ img {
   line-height: 1.65;
 }
 
-.video-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-  margin-top: 1.35rem;
-}
-
 .rush-hour-media {
   grid-column: 1 / -1;
-  width: min(100%, 720px);
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.video-preview {
+  margin: 0;
+}
+
+.video-preview .button {
+  margin-top: .8rem;
 }
 
 .coming-soon-mark {
@@ -1356,6 +1359,10 @@ img {
 
   .kachaka-gallery,
   .engineering-grid {
+    grid-template-columns: 1fr
+  }
+
+  .rush-hour-media {
     grid-template-columns: 1fr
   }
 
