@@ -1,142 +1,717 @@
 <!doctype html>
 <html lang="ja" data-lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Takumi Taki — Mixed Reality, Human-Computer Interaction, and mobile robot navigation research.">
-  <meta name="theme-color" content="#0c2b3a">
-  <title>Takumi Taki | Research</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#content" data-i18n="skip">コンテンツへ移動</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Takumi Taki — Mixed Reality, Human-Computer Interaction, and mobile robot navigation research."
+    />
+    <meta name="theme-color" content="#0c2b3a" />
+    <title>Takumi Taki | Research</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content" data-i18n="skip">コンテンツへ移動</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="Takumi Taki home">TT<span>.</span></a>
-      <nav class="nav-desktop" aria-label="Primary navigation">
-        <a href="#research" data-i18n="nav_research">研究テーマ</a>
-        <a href="#featured" data-i18n="nav_featured">代表研究</a>
-        <a href="#publications" data-i18n="nav_publications">研究業績</a>
-        <a href="#about" data-i18n="nav_about">プロフィール</a>
-        <a href="#contact" data-i18n="nav_contact">連絡先</a>
-      </nav>
-      <div class="header-actions">
-        <button id="langToggle" class="language-toggle" type="button" aria-label="Toggle language" aria-pressed="false"><span aria-hidden="true">JA</span><span aria-hidden="true">EN</span></button>
-        <button id="menuToggle" class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span id="menuIcon" class="material-symbols-rounded" aria-hidden="true">menu</span></button>
-      </div>
-    </div>
-    <div id="mobileNav" class="nav-mobile" hidden>
-      <nav aria-label="Mobile navigation">
-        <a href="#research" data-i18n="nav_research">研究テーマ</a>
-        <a href="#featured" data-i18n="nav_featured">代表研究</a>
-        <a href="#publications" data-i18n="nav_publications">研究業績</a>
-        <a href="#about" data-i18n="nav_about">プロフィール</a>
-        <a href="#contact" data-i18n="nav_contact">連絡先</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="content">
-    <section id="top" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1 data-i18n="hero_name"><span class="hero-name-ja">多喜 匠</span><span class="hero-name-en">Takumi Taki</span></h1>
-          <div class="hero-theme">
-            <p data-i18n="hero_theme_label">研究テーマ</p>
-            <p data-i18n="hero_theme">Mixed Reality × Human–Robot Interaction × Mobile Robot Navigation</p>
-          </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Takumi Taki home"
+          >TT<span>.</span></a
+        >
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <a href="#research" data-i18n="nav_research">研究テーマ</a>
+          <a href="#featured" data-i18n="nav_featured">代表研究</a>
+          <a href="#publications" data-i18n="nav_publications">研究業績</a>
+          <a href="#about" data-i18n="nav_about">プロフィール</a>
+          <a href="#contact" data-i18n="nav_contact">連絡先</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            id="langToggle"
+            class="language-toggle"
+            type="button"
+            aria-label="Toggle language"
+            aria-pressed="false"
+          >
+            <span aria-hidden="true">JA</span><span aria-hidden="true">EN</span>
+          </button>
+          <button
+            id="menuToggle"
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Open menu"
+          >
+            <span
+              id="menuIcon"
+              class="material-symbols-rounded"
+              aria-hidden="true"
+              >menu</span
+            >
+          </button>
         </div>
       </div>
-    </section>
-
-    <section id="research" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow">RESEARCH</p><h2 data-i18n="research_title">研究テーマ</h2></div>
-          <p data-i18n="research_intro">現実空間に重ねた情報を使い、人がロボットの行動や環境を自然に理解・操作できる方法を探究しています。</p>
-        </div>
-        <div class="theme-grid">
-          <article class="theme-card"><span class="theme-index">01</span><h3 data-i18n="theme1_title">Human–Robot Interaction</h3><p data-i18n="theme1_text">専門知識を前提にしない、ロボットとの分かりやすい対話を設計します。</p></article>
-          <article class="theme-card"><span class="theme-index">02</span><h3 data-i18n="theme2_title">Mobile Robot Navigation</h3><p data-i18n="theme2_text">人の意図を反映しながら、自律移動ロボットが安全に移動できる経路と地図の更新を目指します。</p></article>
-          <article class="theme-card"><span class="theme-index">03</span><h3 data-i18n="theme3_title">XR Interface</h3><p data-i18n="theme3_text">複合現実を活用し、現実空間の中でロボットを理解・操作できる体験を設計します。</p></article>
-        </div>
+      <div id="mobileNav" class="nav-mobile" hidden>
+        <nav aria-label="Mobile navigation">
+          <a href="#research" data-i18n="nav_research">研究テーマ</a>
+          <a href="#featured" data-i18n="nav_featured">代表研究</a>
+          <a href="#publications" data-i18n="nav_publications">研究業績</a>
+          <a href="#about" data-i18n="nav_about">プロフィール</a>
+          <a href="#contact" data-i18n="nav_contact">連絡先</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="featured" class="section feature-section">
-      <div class="container">
-        <div class="feature-heading"><div><p class="eyebrow">FEATURED RESEARCH</p><h2 data-i18n="featured_title">代表研究</h2></div><p data-i18n="featured_intro">人の空間的な意図を、ロボットのナビゲーションへ自然に反映するインタフェースを提案しています。</p></div>
-        <div class="featured-grid">
-          <article class="featured-card"><div class="featured-card-head"><span>01</span><p>RO-MAN 2025</p></div><a class="research-thumbnail" href="https://mertcookimg.github.io/mrhad/" target="_blank" rel="noreferrer noopener" aria-label="MRHaDのプロジェクトサイトを開く"><img src="img/research/mrhad/demo_mrhad_16x9_8x.gif" alt="MRHaDでのMR地図編集デモ"></a><h3>MRHaD</h3><p class="feature-subtitle">Mixed Reality-based Hand-Drawn Map Editing Interface for Mobile Robot Navigation</p><p data-i18n="mrhad_intro">MR空間で手描き入力を用い、自律移動ロボットのナビゲーション地図を編集するインタフェースです。実環境を見ながら地図の意味領域を指定することで、意図を伝えやすい編集を目指します。</p><div class="feature-actions"><a class="button primary" href="https://arxiv.org/abs/2504.00580" target="_blank" rel="noreferrer noopener" data-i18n="paper">論文を読む</a><a class="button secondary" href="https://mertcookimg.github.io/mrhad/" target="_blank" rel="noreferrer noopener" data-i18n="project_site">プロジェクトサイト <span class="icon-inline material-symbols-rounded" aria-hidden="true">open_in_new</span></a></div></article>
-          <article class="featured-card"><div class="featured-card-head"><span>02</span><p>RO-MAN 2026</p></div><a class="research-thumbnail" href="https://mertcookimg.github.io/mrrep/" target="_blank" rel="noreferrer noopener" aria-label="MRRePのプロジェクトサイトを開く"><img src="img/research/mrrep/demo_mrrep_16x9_8x.gif" alt="MRRePでのMR経路指定デモ"></a><h3>MRReP</h3><p class="feature-subtitle">Mixed Reality-based Hand-drawn Reference Path Editing Interface for Mobile Robot Navigation</p><p data-i18n="mrrep_intro">MR空間で床面に参照経路を手描きし、その人の意図をロボットの経路計画へ反映するインタフェースです。人と共有する空間における、より正確で使いやすい経路指定を目指します。</p><div class="feature-actions"><a class="button primary" href="https://arxiv.org/abs/2604.00059" target="_blank" rel="noreferrer noopener" data-i18n="paper">論文を読む</a><a class="button secondary" href="https://mertcookimg.github.io/mrrep/" target="_blank" rel="noreferrer noopener" data-i18n="project_site">プロジェクトサイト <span class="icon-inline material-symbols-rounded" aria-hidden="true">open_in_new</span></a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section publications-section">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">PUBLICATIONS</p><h2 data-i18n="publications_title">研究業績</h2></div><p data-i18n="publications_intro">論文・学会発表を掲載しています。</p></div>
-        <ol class="publication-list">
-          <li class="publication-card">
-            <div class="publication-year">2026</div>
-            <div class="publication-content"><p class="publication-type">INTERNATIONAL CONFERENCE · ACCEPTED</p><h3>MRReP: Mixed Reality-based Hand-drawn Reference Path Editing Interface for Mobile Robot Navigation</h3><p class="authors">T. Taki*, M. Kobayashi†*, Y. Uranishi</p><p class="venue">IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) 2026</p><div class="publication-links"><a href="https://arxiv.org/abs/2604.00059" target="_blank" rel="noreferrer noopener" data-i18n="paper">論文を読む</a><a href="https://mertcookimg.github.io/mrrep/" target="_blank" rel="noreferrer noopener" data-i18n="project_site">プロジェクトサイト <span class="icon-inline material-symbols-rounded" aria-hidden="true">open_in_new</span></a></div></div>
-          </li>
-          <li class="publication-card">
-            <div class="publication-year">2025</div>
-            <div class="publication-content"><p class="publication-type">INTERNATIONAL CONFERENCE</p><h3>MRHaD: Mixed Reality-based Hand-Drawn Map Editing Interface for Mobile Robot Navigation</h3><p class="authors">T. Taki*, M. Kobayashi*, E. Iglesius, N. Chiba, S. Shirai, Y. Uranishi</p><p class="venue">IEEE International Conference on Robot and Human Interactive Communication (RO-MAN) 2025</p><div class="publication-links"><a href="https://arxiv.org/abs/2504.00580" target="_blank" rel="noreferrer noopener" data-i18n="paper">論文を読む</a><a href="https://mertcookimg.github.io/mrhad/" target="_blank" rel="noreferrer noopener" data-i18n="project_site">プロジェクトサイト <span class="icon-inline material-symbols-rounded" aria-hidden="true">open_in_new</span></a></div></div>
-          </li>
-          <li class="publication-card">
-            <div class="publication-year">2025</div>
-            <div class="publication-content"><p class="publication-type" data-i18n="domestic_conference">DOMESTIC CONFERENCE</p><h3 data-i18n="pub2_title">自律移動ロボットのための複合現実技術を用いた地図更新システム</h3><p class="authors" data-i18n="pub2_authors">多喜 匠, 小林 聖人, Iglesius Eduardo, 千葉 直也, 白井 詩沙香, 浦西 友樹</p><p class="venue" data-i18n="pub2_venue">ロボティクス・メカトロニクス 講演会 2025</p></div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="works" class="section works-section">
-      <div class="container">
-        <div class="section-heading"><div><p class="eyebrow">PERSONAL PROJECTS</p><h2 data-i18n="works_title">自主制作</h2></div><p data-i18n="works_intro">個人開発の記録</p></div>
-        <article class="project-showcase">
-          <div class="project-visual primary-shot"><img src="img/personal-projects/nippon-snap-collector/demo_nippon_snap_collector.gif" alt="Nippon Snap Collectorの日本地図コレクション画面デモ"></div>
-          <div class="project-content">
-            <p class="publication-type">MOBILE APPLICATION · PERSONAL PROJECT</p>
-            <h3>Nippon Snap Collector</h3>
-            <p class="project-lead" data-i18n="nsc_lead">旅先の写真で日本地図を完成させる、コレクション型の思い出記録アプリ</p>
-            <p data-i18n="nsc_intro">都道府県ごとに写真を1枚登録すると、地図のピースが埋まります。写真に撮影日・場所・コメントを残しながら、「新しい思い出の残し方」を提案します。</p>
-            <div class="work-tags"><span>Flutter</span><span>iOS / Android</span><span>UI / UX Design</span></div>
+    <main id="content">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 data-i18n="hero_name">
+              <span class="hero-name-ja">多喜 匠</span
+              ><span class="hero-name-en">Takumi Taki</span>
+            </h1>
+            <div class="hero-theme">
+              <p data-i18n="hero_theme_label">研究テーマ</p>
+              <p data-i18n="hero_theme">
+                Mixed Reality × Human–Robot Interaction × Mobile Robot
+                Navigation
+              </p>
+            </div>
           </div>
-          <div class="project-points">
-            <div><span>01</span><h4 data-i18n="nsc_point1_title">テーマ別に集める</h4><p data-i18n="nsc_point1_text">ご当地グルメ、絶景、御朱印集めなど、目的ごとに複数の地図コレクションをつくれます。</p></div>
-            <div><span>02</span><h4 data-i18n="nsc_point2_title">地図を完成させる</h4><p data-i18n="nsc_point2_text">都道府県のピースを写真で埋める地図パズル形式。無機質な画面を写真で彩り、収集する楽しさを引き出します。</p></div>
-            <div><span>03</span><h4 data-i18n="nsc_point3_title">記録を振り返る</h4><p data-i18n="nsc_point3_text">見やすいUI、バッジ、アルバム、タイムラインで旅の記録を振り返れます。</p></div>
-          </div>
-          <div class="project-gallery" aria-label="Nippon Snap Collector screenshots">
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_map-gourmet.png" alt="ご当地グルメのテーマ別地図"><figcaption><strong data-i18n="nsc_caption1">テーマ別マップ</strong><span data-i18n="nsc_caption1_detail">ご当地グルメを集める</span></figcaption></figure>
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_map-sightseeing.png" alt="絶景のテーマ別地図"><figcaption><strong data-i18n="nsc_caption2">テーマ別マップ</strong><span data-i18n="nsc_caption2_detail">絶景を集める</span></figcaption></figure>
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_albumpng.png" alt="都道府県別アルバム画面"><figcaption><strong data-i18n="nsc_caption3">都道府県別アルバム</strong><span data-i18n="nsc_caption3_detail">集めた写真を一覧する</span></figcaption></figure>
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_timeline.png" alt="年ごとのタイムライン画面"><figcaption><strong data-i18n="nsc_caption4">年ごとのタイムライン</strong><span data-i18n="nsc_caption4_detail">思い出を時系列で振り返る</span></figcaption></figure>
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_badge.png" alt="バッジ画面"><figcaption><strong data-i18n="nsc_caption5">バッジ</strong><span data-i18n="nsc_caption5_detail">達成を可視化する</span></figcaption></figure>
-            <figure><img src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_edit-ishikawa.png" alt="撮影場所とコメントの編集画面"><figcaption><strong data-i18n="nsc_caption6">写真の記録</strong><span data-i18n="nsc_caption6_detail">撮影場所やコメントを残す</span></figcaption></figure>
-          </div>
-        </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section id="about" class="section about-section">
-      <div class="container about-grid">
-        <figure class="portrait"><img src="img/face_photo.jpg" width="320" height="320" alt="Takumi Taki"></figure>
-        <div><p class="eyebrow">ABOUT</p><h2 data-i18n="about_title">プロフィール</h2><p data-i18n="about_intro">複合現実（Mixed Reality）を活用した、自律移動ロボット向けシステムの研究開発を行っています。</p><dl class="profile-list"><dt data-i18n="profile_name">氏名</dt><dd>多喜 匠 <span>/ Takumi Taki</span></dd><dt data-i18n="profile_affiliation">所属</dt><dd data-i18n="affiliation">大阪大学 大学院情報科学研究科 情報システム工学専攻 浦西研究室</dd><dt data-i18n="profile_focus">研究分野</dt><dd data-i18n="profile_focus_text">Mixed Reality, Human–Computer Interaction, Autonomous Mobile Robots</dd></dl><a class="text-link" href="https://imelab.cme.d3c.osaka-u.ac.jp/" target="_blank" rel="noreferrer noopener" data-i18n="lab_link">浦西研究室 WEBサイト <span class="icon-inline material-symbols-rounded" aria-hidden="true">open_in_new</span></a></div>
-      </div>
-    </section>
+      <section id="research" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">RESEARCH</p>
+              <h2 data-i18n="research_title">研究テーマ</h2>
+            </div>
+            <p data-i18n="research_intro">
+              現実空間に重ねた情報を使い、人がロボットの行動や環境を自然に理解・操作できる方法を探究しています。
+            </p>
+          </div>
+          <div class="theme-grid">
+            <article class="theme-card">
+              <span class="theme-index">01</span>
+              <h3 data-i18n="theme1_title">Human–Robot Interaction</h3>
+              <p data-i18n="theme1_text">
+                専門知識を前提にしない、ロボットとの分かりやすい対話を設計します。
+              </p>
+            </article>
+            <article class="theme-card">
+              <span class="theme-index">02</span>
+              <h3 data-i18n="theme2_title">Mobile Robot Navigation</h3>
+              <p data-i18n="theme2_text">
+                人の意図を反映しながら、自律移動ロボットが安全に移動できる経路と地図の更新を目指します。
+              </p>
+            </article>
+            <article class="theme-card">
+              <span class="theme-index">03</span>
+              <h3 data-i18n="theme3_title">XR Interface</h3>
+              <p data-i18n="theme3_text">
+                複合現実を活用し、現実空間の中でロボットを理解・操作できる体験を設計します。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-inner"><div><p class="eyebrow">CONTACT</p><h2 data-i18n="contact_title">連絡先</h2><p data-i18n="contact_text">研究に関するご連絡・共同研究のご相談は、LinkedInからお願いいたします。</p></div><div class="contact-links"><a href="https://www.linkedin.com/in/takumi-taki" target="_blank" rel="noreferrer noopener"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" /></svg><span class="social-label">LinkedIn</span></a><a href="https://instagram.com/tacky1725" target="_blank" rel="noreferrer noopener"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" /></svg><span class="social-label">Instagram</span></a></div></div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="container"><small>© <span id="year"></span> Takumi Taki.</small><a class="back-to-top" href="#top" aria-label="ページ上部へ"><span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span></a></div></footer>
-  <script src="script.js" defer></script>
-</body>
+      <section id="featured" class="section feature-section">
+        <div class="container">
+          <div class="feature-heading">
+            <div>
+              <p class="eyebrow">FEATURED RESEARCH</p>
+              <h2 data-i18n="featured_title">代表研究</h2>
+            </div>
+            <p data-i18n="featured_intro">
+              人の空間的な意図を、ロボットのナビゲーションへ自然に反映するインタフェースを提案しています。
+            </p>
+          </div>
+          <div class="featured-grid">
+            <article class="featured-card">
+              <div class="featured-card-head">
+                <span>01</span>
+                <p>RO-MAN 2025</p>
+              </div>
+              <a
+                class="research-thumbnail"
+                href="https://mertcookimg.github.io/mrhad/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="MRHaDのプロジェクトサイトを開く"
+                ><img
+                  src="img/research/mrhad/demo_mrhad_16x9_8x.gif"
+                  alt="MRHaDでのMR地図編集デモ"
+              /></a>
+              <h3>MRHaD</h3>
+              <p class="feature-subtitle">
+                Mixed Reality-based Hand-Drawn Map Editing Interface for Mobile
+                Robot Navigation
+              </p>
+              <p data-i18n="mrhad_intro">
+                MR空間で手描き入力を用い、自律移動ロボットのナビゲーション地図を編集するインタフェースです。実環境を見ながら地図の意味領域を指定することで、意図を伝えやすい編集を目指します。
+              </p>
+              <div class="feature-actions">
+                <a
+                  class="button primary"
+                  href="https://arxiv.org/abs/2504.00580"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="paper"
+                  >論文を読む</a
+                ><a
+                  class="button secondary"
+                  href="https://mertcookimg.github.io/mrhad/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="project_site"
+                  >プロジェクトサイト
+                  <span
+                    class="icon-inline material-symbols-rounded"
+                    aria-hidden="true"
+                    >open_in_new</span
+                  ></a
+                >
+              </div>
+            </article>
+            <article class="featured-card">
+              <div class="featured-card-head">
+                <span>02</span>
+                <p>RO-MAN 2026</p>
+              </div>
+              <a
+                class="research-thumbnail"
+                href="https://mertcookimg.github.io/mrrep/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="MRRePのプロジェクトサイトを開く"
+                ><img
+                  src="img/research/mrrep/demo_mrrep_16x9_8x.gif"
+                  alt="MRRePでのMR経路指定デモ"
+              /></a>
+              <h3>MRReP</h3>
+              <p class="feature-subtitle">
+                Mixed Reality-based Hand-drawn Reference Path Editing Interface
+                for Mobile Robot Navigation
+              </p>
+              <p data-i18n="mrrep_intro">
+                MR空間で床面に参照経路を手描きし、その人の意図をロボットの経路計画へ反映するインタフェースです。人と共有する空間における、より正確で使いやすい経路指定を目指します。
+              </p>
+              <div class="feature-actions">
+                <a
+                  class="button primary"
+                  href="https://arxiv.org/abs/2604.00059"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="paper"
+                  >論文を読む</a
+                ><a
+                  class="button secondary"
+                  href="https://mertcookimg.github.io/mrrep/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="project_site"
+                  >プロジェクトサイト
+                  <span
+                    class="icon-inline material-symbols-rounded"
+                    aria-hidden="true"
+                    >open_in_new</span
+                  ></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section publications-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">PUBLICATIONS</p>
+              <h2 data-i18n="publications_title">研究業績</h2>
+            </div>
+            <p data-i18n="publications_intro">
+              論文・学会発表を掲載しています。
+            </p>
+          </div>
+          <ol class="publication-list">
+            <li class="publication-card">
+              <div class="publication-year">2026</div>
+              <div class="publication-content">
+                <p class="publication-type">
+                  INTERNATIONAL CONFERENCE · ACCEPTED
+                </p>
+                <h3>
+                  MRReP: Mixed Reality-based Hand-drawn Reference Path Editing
+                  Interface for Mobile Robot Navigation
+                </h3>
+                <p class="authors">T. Taki*, M. Kobayashi†*, Y. Uranishi</p>
+                <p class="venue">
+                  IEEE International Conference on Robot and Human Interactive
+                  Communication (RO-MAN) 2026
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2604.00059"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-i18n="paper"
+                    >論文を読む</a
+                  ><a
+                    href="https://mertcookimg.github.io/mrrep/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-i18n="project_site"
+                    >プロジェクトサイト
+                    <span
+                      class="icon-inline material-symbols-rounded"
+                      aria-hidden="true"
+                      >open_in_new</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="publication-card">
+              <div class="publication-year">2025</div>
+              <div class="publication-content">
+                <p class="publication-type">INTERNATIONAL CONFERENCE</p>
+                <h3>
+                  MRHaD: Mixed Reality-based Hand-Drawn Map Editing Interface
+                  for Mobile Robot Navigation
+                </h3>
+                <p class="authors">
+                  T. Taki*, M. Kobayashi*, E. Iglesius, N. Chiba, S. Shirai, Y.
+                  Uranishi
+                </p>
+                <p class="venue">
+                  IEEE International Conference on Robot and Human Interactive
+                  Communication (RO-MAN) 2025
+                </p>
+                <div class="publication-links">
+                  <a
+                    href="https://arxiv.org/abs/2504.00580"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-i18n="paper"
+                    >論文を読む</a
+                  ><a
+                    href="https://mertcookimg.github.io/mrhad/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    data-i18n="project_site"
+                    >プロジェクトサイト
+                    <span
+                      class="icon-inline material-symbols-rounded"
+                      aria-hidden="true"
+                      >open_in_new</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="publication-card">
+              <div class="publication-year">2025</div>
+              <div class="publication-content">
+                <p class="publication-type" data-i18n="domestic_conference">
+                  DOMESTIC CONFERENCE
+                </p>
+                <h3 data-i18n="pub2_title">
+                  自律移動ロボットのための複合現実技術を用いた地図更新システム
+                </h3>
+                <p class="authors" data-i18n="pub2_authors">
+                  多喜 匠, 小林 聖人, Iglesius Eduardo, 千葉 直也, 白井 詩沙香,
+                  浦西 友樹
+                </p>
+                <p class="venue" data-i18n="pub2_venue">
+                  ロボティクス・メカトロニクス 講演会 2025
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="works" class="section works-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">PERSONAL PROJECTS</p>
+              <h2 data-i18n="works_title">自主制作</h2>
+            </div>
+            <p data-i18n="works_intro">個人開発の記録</p>
+          </div>
+          <article class="project-showcase">
+            <div class="project-visual primary-shot">
+              <img
+                src="img/personal-projects/nippon-snap-collector/demo_nippon_snap_collector.gif"
+                alt="Nippon Snap Collectorの日本地図コレクション画面デモ"
+              />
+            </div>
+            <div class="project-content">
+              <p class="publication-type">
+                MOBILE APPLICATION · PERSONAL PROJECT
+              </p>
+              <h3>Nippon Snap Collector</h3>
+              <p class="project-lead" data-i18n="nsc_lead">
+                旅先の写真で日本地図を完成させる、コレクション型の思い出記録アプリ
+              </p>
+              <p data-i18n="nsc_intro">
+                都道府県ごとに写真を1枚登録すると、地図のピースが埋まります。写真に撮影日・場所・コメントを残しながら、「新しい思い出の残し方」を提案します。
+              </p>
+              <div class="work-tags">
+                <span>Flutter</span><span>iOS / Android</span
+                ><span>UI / UX Design</span>
+              </div>
+            </div>
+            <div class="project-points">
+              <div>
+                <span>01</span>
+                <h4 data-i18n="nsc_point1_title">テーマ別に集める</h4>
+                <p data-i18n="nsc_point1_text">
+                  ご当地グルメ、絶景、御朱印集めなど、目的ごとに複数の地図コレクションをつくれます。
+                </p>
+              </div>
+              <div>
+                <span>02</span>
+                <h4 data-i18n="nsc_point2_title">地図を完成させる</h4>
+                <p data-i18n="nsc_point2_text">
+                  都道府県のピースを写真で埋める地図パズル形式。無機質な画面を写真で彩り、収集する楽しさを引き出します。
+                </p>
+              </div>
+              <div>
+                <span>03</span>
+                <h4 data-i18n="nsc_point3_title">記録を振り返る</h4>
+                <p data-i18n="nsc_point3_text">
+                  見やすいUI、バッジ、アルバム、タイムラインで旅の記録を振り返れます。
+                </p>
+              </div>
+            </div>
+            <div
+              class="project-gallery"
+              aria-label="Nippon Snap Collector screenshots"
+            >
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_map-gourmet.png"
+                  alt="ご当地グルメのテーマ別地図"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption1">テーマ別マップ</strong
+                  ><span data-i18n="nsc_caption1_detail"
+                    >ご当地グルメを集める</span
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_map-sightseeing.png"
+                  alt="絶景のテーマ別地図"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption2">テーマ別マップ</strong
+                  ><span data-i18n="nsc_caption2_detail">絶景を集める</span>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_albumpng.png"
+                  alt="都道府県別アルバム画面"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption3">都道府県別アルバム</strong
+                  ><span data-i18n="nsc_caption3_detail"
+                    >集めた写真を一覧する</span
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_timeline.png"
+                  alt="年ごとのタイムライン画面"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption4">年ごとのタイムライン</strong
+                  ><span data-i18n="nsc_caption4_detail"
+                    >思い出を時系列で振り返る</span
+                  >
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_badge.png"
+                  alt="バッジ画面"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption5">バッジ</strong
+                  ><span data-i18n="nsc_caption5_detail">達成を可視化する</span>
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="img/personal-projects/nippon-snap-collector/nippon_snap_collector_edit-ishikawa.png"
+                  alt="撮影場所とコメントの編集画面"
+                />
+                <figcaption>
+                  <strong data-i18n="nsc_caption6">写真の記録</strong
+                  ><span data-i18n="nsc_caption6_detail"
+                    >撮影場所やコメントを残す</span
+                  >
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <figure class="project-visual rush-hour-shot">
+              <img
+                src="img/personal-projects/rush-hour-breaker/rush_hour_breaker_overview.png"
+                alt="満員電車ブレイカーの体験装置と体験者"
+              />
+            </figure>
+            <div class="project-content">
+              <p class="publication-type">VR EXPERIENCE · TEAM PROJECT</p>
+              <h3>満員電車ブレイカー</h3>
+              <p class="project-lead" data-i18n="train_lead">
+                ストレスいっぱいの満員電車から、力を解放してすべてを吹き飛ばすVR体験
+              </p>
+              <p data-i18n="train_intro">
+                VR映像に振動・風圧・圧迫感などの感覚演出を加え、満員電車の過酷な環境を再現。体験者は力を込めてエネルギーを蓄積・解放し、周囲のものを吹き飛ばすことで、ストレス解消の爽快感を味わいます。
+              </p>
+
+              <div class="work-tags">
+                <span>Virtual Reality</span><span>Multisensory</span
+                ><span>Haptics</span>
+              </div>
+              <p class="work-reflection" data-i18n="train_reflection">
+                本作品はVR作品コンテスト「Interverse Virtual Reality
+                Challenge」に出展したものです。多くの競合作品を体験する中で、様々な感覚を統合した体験が生み出す没入感の大きさを実感しました。特に、触覚が加わることで、仮想世界は単に「眺めるもの」から「身体を通して関われるもの」へと変化すると考えます。
+              </p>
+            </div>
+
+            <section
+              class="engineering-section"
+              aria-labelledby="engineering-title"
+            >
+              <p
+                id="engineering-title"
+                class="engineering-heading"
+                data-i18n="train_engineering_title"
+              >
+                実装上の工夫
+              </p>
+              <div class="engineering-grid">
+                <article>
+                  <img
+                    src="img/personal-projects/rush-hour-breaker/rush_hour_breaker_shaft.jpg"
+                    alt="傾斜台を動かす2自由度ジョイントと回転軸"
+                  />
+                  <div>
+                    <span>01</span>
+                    <h4 data-i18n="train_point1_title">
+                      2自由度ジョイントによるリアルな電車の揺れの提示
+                    </h4>
+                    <p data-i18n="train_point1_text">
+                      2本のアクチュエータと回転軸を、前後方向の傾斜可動域と角加速度・角速度を大きく確保できるよう配置。さらに、ポテンショメータの非線形特性を実測データから近似して補正し、急発進・急停車を含む電車特有の揺れを高精度に提示しました。
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="img/personal-projects/rush-hour-breaker/rush_hour_breaker_trolley.jpg"
+                    alt="振動装置と送風装置を制御する機材"
+                  />
+                  <div>
+                    <span>02</span>
+                    <h4 data-i18n="train_point2_title">
+                      振動・送風のリアルタイム同時制御
+                    </h4>
+                    <p data-i18n="train_point2_text">
+                      マルチコア処理で通信・振動・送風制御を分離し、単一のマイコン上で遅延なく同時実行。複数の家庭用サーキュレータをリレー制御し、稼働台数と組み合わせによって走行風や衝撃波を安全かつ低コストに表現しました。
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <div class="rush-hour-media">
+              <div class="work-video">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/lQo2lxqtz4c"
+                  title="満員電車ブレイカー PV"
+                  loading="lazy"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="video-links">
+                <a
+                  class="button secondary"
+                  href="https://youtu.be/lQo2lxqtz4c"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="watch_pv"
+                  >PV
+                  <span
+                    class="icon-inline material-symbols-rounded"
+                    aria-hidden="true"
+                    >open_in_new</span
+                  ></a
+                >
+                <a
+                  class="button secondary"
+                  href="https://www.youtube.com/watch?v=C4XH_ga1g5c"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  data-i18n="watch_explanation"
+                  >説明動画
+                  <span
+                    class="icon-inline material-symbols-rounded"
+                    aria-hidden="true"
+                    >open_in_new</span
+                  ></a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase project-coming-soon">
+            <div class="project-visual coming-soon-mark" aria-hidden="true">
+              <span class="material-symbols-rounded">spellcheck</span>
+            </div>
+            <div class="project-content">
+              <p class="publication-type">WEB APPLICATION · PERSONAL PROJECT</p>
+              <h3>みんなの英単語帳</h3>
+              <p class="coming-soon-label">Coming soon</p>
+              <p data-i18n="vocab_coming_soon">
+                詳細は今後追加予定です。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <figure class="portrait">
+            <img
+              src="img/face_photo.jpg"
+              width="320"
+              height="320"
+              alt="Takumi Taki"
+            />
+          </figure>
+          <div>
+            <p class="eyebrow">ABOUT</p>
+            <h2 data-i18n="about_title">プロフィール</h2>
+            <p data-i18n="about_intro">
+              複合現実（Mixed
+              Reality）を活用した、自律移動ロボット向けシステムの研究開発を行っています。
+            </p>
+            <dl class="profile-list">
+              <dt data-i18n="profile_name">氏名</dt>
+              <dd>多喜 匠 <span>/ Takumi Taki</span></dd>
+              <dt data-i18n="profile_affiliation">所属</dt>
+              <dd data-i18n="affiliation">
+                大阪大学 大学院情報科学研究科 情報システム工学専攻 浦西研究室
+              </dd>
+              <dt data-i18n="profile_focus">研究分野</dt>
+              <dd data-i18n="profile_focus_text">
+                Mixed Reality, Human–Computer Interaction, Autonomous Mobile
+                Robots
+              </dd>
+            </dl>
+            <a
+              class="text-link"
+              href="https://imelab.cme.d3c.osaka-u.ac.jp/"
+              target="_blank"
+              rel="noreferrer noopener"
+              data-i18n="lab_link"
+              >浦西研究室 WEBサイト
+              <span
+                class="icon-inline material-symbols-rounded"
+                aria-hidden="true"
+                >open_in_new</span
+              ></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-inner">
+          <div>
+            <p class="eyebrow">CONTACT</p>
+            <h2 data-i18n="contact_title">連絡先</h2>
+            <p data-i18n="contact_text">
+              研究に関するご連絡・共同研究のご相談は、LinkedInからお願いいたします。
+            </p>
+          </div>
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/takumi-taki"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="brand-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"
+                /></svg
+              ><span class="social-label">LinkedIn</span></a
+            ><a
+              href="https://instagram.com/tacky1725"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><svg
+                class="brand-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                /></svg
+              ><span class="social-label">Instagram</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Takumi Taki.</small
+        ><a class="back-to-top" href="#top" aria-label="ページ上部へ"
+          ><span class="material-symbols-rounded" aria-hidden="true"
+            >arrow_upward</span
+          ></a
+        >
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>
