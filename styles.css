@@ -691,12 +691,25 @@ img {
 }
 
 .research-thumbnail {
+  display: block;
   aspect-ratio: 426 / 240;
   margin: 1.25rem 0 0;
   overflow: hidden;
   border: 1px solid rgba(158, 221, 217, .28);
   border-radius: 9px;
   background: #071d29;
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.research-thumbnail:hover,
+.research-thumbnail:focus-visible {
+  border-color: #9eddd9;
+  transform: translateY(-2px);
+}
+
+.research-thumbnail:focus-visible {
+  outline: 2px solid #9eddd9;
+  outline-offset: 3px;
 }
 
 .research-thumbnail img {
